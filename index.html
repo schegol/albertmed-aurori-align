@@ -17,7 +17,6 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item dropdown">
@@ -100,32 +99,29 @@
           <form class="appointment-form" action="#" method="post">
             <fieldset class="d-flex justify-content-around">
               <legend class="visually-hidden">Выберите врача, дату и время приема</legend>
-              <label>
+              <label class="col-sm-4">
                 Ваше имя
                 <input class="form-control" type="text" placeholder="Андрей" required>
               </label>
-              <label>
+              <label class="col-sm-4">
                 Ваша фамилия
                 <input class="form-control" type="text" placeholder="Андреев" required>
               </label>
-              <label>
+              <label class="col-sm-4">
                 Ваш телефон
                 <input class="form-control" type="number" placeholder="84116533333" required>
               </label>
-              <label>
-                Ваша почта (опционально)
-                <input class="form-control" type="email" placeholder="your@mail.example">
-              </label>
-              <label>
-                Направление
+              <label class="col-sm-6">
+                Отделение
                 <select class="form-control">
+                  <option value="">---</option>
                   <option value="">Косметология</option>
                   <option value="">Физиотерапия</option>
                   <option value="">Гастроэнтерология</option>
                   <option value="">Кардиология</option>
                 </select>
               </label>
-              <label>
+              <label class="col-sm-6">
                 Врач
                 <select class="form-control">
                   <option value="">Любой врач отделения</option>
@@ -133,15 +129,15 @@
                   <option value="">Мышакова С.Ю.</option>
                 </select>
               </label>
-              <label>
+              <label class="col-sm-6">
                 Желаемая дата
                 <input class="form-control" type="date" value="01.01.2020" required>
               </label>
-              <label>
+              <label class="col-sm-6">
                 Желаемое время
                 <input class="form-control" type="time" placeholder="11:00" required>
               </label>
-              <label>
+              <label class="col">
                 Комментарий (опционально)
                 <textarea class="form-control" type="text" placeholder="Могу задержатсья на 10 минут"></textarea>
               </label>

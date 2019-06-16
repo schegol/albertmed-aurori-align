@@ -59,7 +59,8 @@ img {
 
 .navbar-light .nav-item .nav-link:hover,
 .navbar-light .nav-item .nav-link:focus {
-  color: #747474;
+  background-color: #d5e3f6;
+  border-radius: 3px;
 }
 
 .navbar-light .nav-item .nav-link:active {
@@ -76,6 +77,17 @@ img {
 
 .navbar-light .navbar-nav .nav-link {
     color: #000;
+}
+
+@media (max-width: 991px) and (min-width: 0px) {
+  .navbar-light .navbar-nav .nav-link {
+    padding-left: 0;
+    transition: padding-left .5s ease;
+  }
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:focus {
+    padding-left: 10px;
+  }
 }
 
 .dropdown-menu {
@@ -218,19 +230,9 @@ img {
 
 
 
-/* .footer-navigation h2 {
-  margin: 0;
-  padding: 0;
-} */
-
 .footer-copyrights {
   background-color: #105599;
 }
-
-/* .footer-copyrights h2 {
-  margin: 0;
-  padding: 0;
-} */
 
 .footer-copyrights-text {
   padding-top: 10px;
@@ -244,9 +246,6 @@ img {
 }
 
 .footer-copyrights-link {
-  /* position: relative; */
-  /* padding-left: 20px; */
-
   color: #f0dc5f;;
 }
 
@@ -270,22 +269,17 @@ img {
   fill: #fff;
 }
 
-/* .footer-copyrights-link a::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  background-image: url("../img/sprite.png");
-  background-position: 23px 24px;
-} */
-
 .footer-copyrights-link:hover a::before {
   background-position: 23px 24px;
 }
 
+.popup {
+  box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
+}
+
 .popup-appointment {
   margin: 0 auto;
-  width: 800px;
+  width: 600px;
 
   border: 2px solid #747474;
   border-radius: 8px;
@@ -297,14 +291,13 @@ img {
 
 .popup .form-control {
   padding: 5px 0 5px 5px;
-  width: 300px;
 
   border-radius: .2rem;
   border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 .form-control:focus {
-  box-shadow: 0 0 0 .2rem #d5e3f6;
+  box-shadow: 0 0 5px .2rem #d5e3f6;
 }
 
 .modal-header {
@@ -333,12 +326,21 @@ img {
   opacity: .75;
 }
 
+.appointment-form label {
+  margin-top: .5rem;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  margin-top: .3rem;
+}
+
 .popup option {
   border-radius: .2rem;
 }
 
 .popup textarea {
-  /* width: 80%; */
   height: 150px;
 
   resize: none;
@@ -357,6 +359,8 @@ img {
 }
 
 .popup-appointment .btn {
+  margin-top: 25px;
+
   color: #fff;
   text-transform: uppercase;
 
@@ -392,9 +396,6 @@ img {
 }
 
 @media (max-width: 390px) and (min-width: 0px) {
-  .popup .form-control {
-    width: 150px;
-  }
   .appointment-form fieldset {
     justify-content: center;
   }
