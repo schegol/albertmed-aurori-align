@@ -215,6 +215,13 @@ img {
   border-color: rgba(0, 0, 0, .4);
 }
 
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.show > .btn-success.dropdown-toggle:focus,
+.btn-success.focus, .btn-success:focus {
+    box-shadow: 0 0 4px .2rem rgba(72, 180, 97, .4);
+}
+
 .main-heading {
   font-size: 2em;
   line-height: 1.2em;
