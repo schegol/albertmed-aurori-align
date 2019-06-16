@@ -4,7 +4,7 @@ body {
   font-weight: normal;
   line-height: 30px;
 }
- 
+
 img {
   max-width: 100%;
   height: auto;
@@ -216,10 +216,12 @@ img {
   background-color: #d5e3f6;
 }
 
-.footer-navigation h2 {
+
+
+/* .footer-navigation h2 {
   margin: 0;
   padding: 0;
-}
+} */
 
 .footer-copyrights {
   background-color: #105599;
@@ -230,38 +232,52 @@ img {
   padding: 0;
 } */
 
-.footer-copyrights-link {
-  padding-top: 15px;
-  padding-bottom: 15px;
+.footer-copyrights-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 1rem;
 
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 300;
   color: #fff;
 }
 
-.footer-copyrights-link a {
-  position: relative;
-  padding-left: 20px;
+.footer-copyrights-link {
+  /* position: relative; */
+  /* padding-left: 20px; */
 
   color: #f0dc5f;;
 }
 
-.footer-copyrights-link a:hover,
-.footer-copyrights-link a:focus {
+.footer-copyrights-link svg {
+  padding-right: 5px;
+}
+
+.footer-copyrights-link:hover,
+.footer-copyrights-link:focus {
   color: #fff;
   text-decoration: none;
 }
 
-.footer-copyrights-link a::before {
+.footer-copyrights-link path,
+.footer-copyrights-link path {
+  fill: #f0dc52;
+}
+
+.footer-copyrights-link:hover path,
+.footer-copyrights-link:focus path {
+  fill: #fff;
+}
+
+/* .footer-copyrights-link a::before {
   position: absolute;
   content: "";
   top: 0;
   right: 0;
   background-image: url("../img/sprite.png");
   background-position: 23px 24px;
-}
+} */
 
 .footer-copyrights-link:hover a::before {
   background-position: 23px 24px;
@@ -377,6 +393,9 @@ img {
 
 @media (max-width: 390px) and (min-width: 0px) {
   .popup .form-control {
-    width: 100px;
+    width: 150px;
+  }
+  .appointment-form fieldset {
+    justify-content: center;
   }
 }
