@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Сайт клиники «АльбертМед»</title>
+  </head>
+  <body class="index">
+    <header class="site-header">
+      <section class="header-navigation align-items-center container">
+        <h2 class="visually-hidden">Навигация сайта</h2>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand"><img width="120" height="120" src="img/logo.svg" alt="Медицинская клиника «АльбертМед»"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Отделения и врачи
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="cosmetology.html">Косметология</a>
+                  <a class="dropdown-item" href="physiotherapy.html">Физиотерапия</a>
+                  <a class="dropdown-item" href="gastroenterology.html">Гастроэнтерология</a>
+                  <a class="dropdown-item" href="cardiology.html">Кардиология</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="price.html">Цены на услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="offers.html">Специальные предложения</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О клинике</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      <div class="header-contacts-wrap">
+        <section class="header-contacts row align-items-center justify-content-between container">
+          <div class="clinic-contacts-wrap">
+            <span class="header-address">г. Верхоянск, ул. Кирова, д. 28</span>
+            <a class="header-phone" href="phone:+74116533333">8 (41165) 333-33</a>
+          </div>
+          <h2 class="visually-hidden">Основная контактная информация клиники</h2>
+          <a class="btn btn-success nav-link appointment" href="contacts.html" data-toggle="modal" data-target="#modalAppointment">Записатсья на прием</a>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="main-slider container-fluid">
+
+      </div>
+
+      <div class="container">
+
+      </div>
+
+      <div class="container">
+        <h1 class="main-heading">«АльбертМед» — клиника №1 города Верхоянска!<sup>*</sup><br>
+          <span><sup>*</sup>по мнению некоторых клиентов</span>
+        </h1>
+      </div>
+    </main>
+
+    <footer>
+      <section class="footer-navigation">
+        <div class="container">
+          <h2 class="visually-hidden">Навигация футера</h2>
+          1
+        </div>
+      </section>
+      <section class="footer-copyrights">
+        <div class="container">
+          <h2 class="visually-hidden">Копирайт сайта</h2>
+          <p class="footer-copyrights-link">Верстка: <a href="https://aurori-align.ru/" target="_blank">Aurori Align</a>, 2019</p>
+        </div>
+      </section>
+    </footer>
+
+    <div class="popup-overlay modal" id="modalAppointment" tabindex="-1" role="dialog">
+      <section class="popup popup-appointment modal-content">
+        <div class="modal-header">
+          <div class="modal-title"><h2>Форма записи на прием</h2></div>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Закрыть форму записи на прием"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form class="appointment-form" action="#" method="post">
+            <fieldset class="d-flex justify-content-between">
+              <legend class="visually-hidden">Выберите врача, дату и время приема</legend>
+              <label>
+                Ваше имя
+                <input class="form-control" type="text" placeholder="Андрей">
+              </label>
+              <label>
+                Ваша фамилия
+                <input class="form-control" type="text" placeholder="Андреев">
+              </label>
+              <label>
+                Ваш телефон
+                <input class="form-control" type="number" placeholder="84116533333">
+              </label>
+              <label>
+                Направление
+                <select class="form-control">
+                  <option value="">Косметология</option>
+                  <option value="">Физиотерапия</option>
+                  <option value="">Гастроэнтерология</option>
+                  <option value="">Кардиология</option>
+                </select>
+              </label>
+              <label>
+                Врач
+                <select class="form-control">
+                  <option value="">Любой врач отделения</option>
+                  <option value="">Лаврова Г.И.</option>
+                  <option value="">Мышакова С.Ю.</option>
+                </select>
+              </label>
+              <label>
+                Желаемая дата
+                <input class="form-control" type="date" value="01.01.2020">
+              </label>
+              <label>
+                Желаемое время
+                <input class="form-control" type="time" placeholder="11:00">
+              </label>
+              <label>
+                Комментарий (опционально)
+                <textarea class="form-control" type="text" placeholder="Могу задержатсья на 10 минут"></textarea>
+              </label>
+            </fieldset>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-success" type="submit">Записаться к врачу</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
