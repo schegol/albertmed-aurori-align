@@ -1,6 +1,6 @@
 body {
   font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: normal;
   line-height: 30px;
 }
@@ -234,6 +234,94 @@ img {
 .footer-navigation {
   background-color: #d5e3f6;
 }
+
+.footer-navigation h3 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.footer-navigation-contacts {
+  /* margin-bottom: 30px; */
+  margin-top: 30px;
+}
+
+.footer-contacts-list {
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  list-style: none;
+}
+
+.footer-contacts-list a {
+  position: relative;
+
+  color: #105599;
+  text-decoration: none;
+}
+
+.footer-contacts-list a::before {
+  position: absolute;
+
+  content: "";
+  top: 3px;
+  left: -30px;
+}
+
+.footer-phone::before {
+  width: 14px;
+  height: 14px;
+
+  background-image: url("../img/phone.svg");
+}
+
+.footer-mail::before {
+  width: 14px;
+  height: 14px;
+
+  background-image: url("../img/letter.svg");
+}
+
+.footer-vk::before {
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/vk.svg");
+}
+
+.footer-contacts-list a:hover,
+.footer-contacts-list a:focus {
+  color: #747474;
+}
+
+.footer-navigation-menu {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-navigation-menu ul {
+  list-style: none;
+}
+
+.footer-navigation-menu a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #105599;
+  text-decoration: none;
+}
+
+.footer-navigation-menu a:hover,
+.footer-navigation-menu a:focus {
+  color: #747474;
+}
+
+/*Низ футера VVV*/
 
 .footer-copyrights {
   background-color: #105599;
