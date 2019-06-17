@@ -235,8 +235,6 @@ img {
   background-color: #d5e3f6;
 }
 
-
-
 .footer-copyrights {
   background-color: #105599;
 }
@@ -245,6 +243,7 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 1rem;
+  margin-bottom: 0;
 
   font-size: 18px;
   line-height: 24px;
@@ -290,10 +289,6 @@ img {
 
   border: 2px solid #747474;
   border-radius: 8px;
-}
-
-.popup-appointment fieldset {
-  flex-wrap: wrap;
 }
 
 .popup .form-control {

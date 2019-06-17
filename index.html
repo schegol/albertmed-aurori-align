@@ -23,12 +23,12 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Отделения и врачи
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="cosmetology.html">Косметология</a>
-                  <a class="dropdown-item" href="physiotherapy.html">Физиотерапия</a>
-                  <a class="dropdown-item" href="gastroenterology.html">Гастроэнтерология</a>
-                  <a class="dropdown-item" href="cardiology.html">Кардиология</a>
-                </div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="cosmetology.html">Косметология</a></li>
+                  <li><a class="dropdown-item" href="physiotherapy.html">Физиотерапия</a></li>
+                  <li><a class="dropdown-item" href="gastroenterology.html">Гастроэнтерология</a></li>
+                  <li><a class="dropdown-item" href="cardiology.html">Кардиология</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="price.html">Цены на услуги</a>
@@ -97,50 +97,52 @@
         </div>
         <div class="modal-body">
           <form class="appointment-form" action="#" method="post">
-            <fieldset class="d-flex justify-content-around">
-              <legend class="visually-hidden">Выберите врача, дату и время приема</legend>
-              <label class="col-sm-4">
-                Ваше имя
-                <input class="form-control" type="text" placeholder="Андрей" required>
-              </label>
-              <label class="col-sm-4">
-                Ваша фамилия
-                <input class="form-control" type="text" placeholder="Андреев" required>
-              </label>
-              <label class="col-sm-4">
-                Ваш телефон
-                <input class="form-control" type="number" placeholder="84116533333" required>
-              </label>
-              <label class="col-sm-6">
-                Отделение
-                <select class="form-control">
-                  <option value="">---</option>
-                  <option value="">Косметология</option>
-                  <option value="">Физиотерапия</option>
-                  <option value="">Гастроэнтерология</option>
-                  <option value="">Кардиология</option>
-                </select>
-              </label>
-              <label class="col-sm-6">
-                Врач
-                <select class="form-control">
-                  <option value="">Любой врач отделения</option>
-                  <option value="">Лаврова Г.И.</option>
-                  <option value="">Мышакова С.Ю.</option>
-                </select>
-              </label>
-              <label class="col-sm-6">
-                Желаемая дата
-                <input class="form-control" type="date" value="01.01.2020" required>
-              </label>
-              <label class="col-sm-6">
-                Желаемое время
-                <input class="form-control" type="time" placeholder="11:00" required>
-              </label>
-              <label class="col">
-                Комментарий (опционально)
-                <textarea class="form-control" type="text" placeholder="Могу задержатсья на 10 минут"></textarea>
-              </label>
+            <fieldset>
+              <div class="row">
+                <legend class="visually-hidden">Выберите врача, дату и время приема</legend>
+                <label class="col-sm-4">
+                  Ваше имя
+                  <input class="form-control" type="text" placeholder="Андрей" required>
+                </label>
+                <label class="col-sm-4">
+                  Ваша фамилия
+                  <input class="form-control" type="text" placeholder="Андреев" required>
+                </label>
+                <label class="col-sm-4">
+                  Ваш телефон
+                  <input class="form-control" type="number" placeholder="84116533333" required>
+                </label>
+                <label class="col-sm-6">
+                  Отделение
+                  <select class="form-control">
+                    <option value="">---</option>
+                    <option value="">Косметология</option>
+                    <option value="">Физиотерапия</option>
+                    <option value="">Гастроэнтерология</option>
+                    <option value="">Кардиология</option>
+                  </select>
+                </label>
+                <label class="col-sm-6">
+                  Врач
+                  <select class="form-control">
+                    <option value="">Любой врач отделения</option>
+                    <option value="">Лаврова Г.И.</option>
+                    <option value="">Мышакова С.Ю.</option>
+                  </select>
+                </label>
+                <label class="col-sm-6">
+                  Желаемая дата
+                  <input class="form-control" type="date" value="01.01.2020" required>
+                </label>
+                <label class="col-sm-6">
+                  Желаемое время
+                  <input class="form-control" type="time" placeholder="11:00" required>
+                </label>
+                <label class="col">
+                  Комментарий (опционально)
+                  <textarea class="form-control" type="text" placeholder="Могу задержатсья на 10 минут"></textarea>
+                </label>
+              </div>
             </fieldset>
             <div class="d-flex justify-content-center">
               <button class="btn btn-success" type="submit">Записаться к врачу</button>
