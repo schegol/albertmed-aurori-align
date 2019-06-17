@@ -275,7 +275,7 @@ img {
   padding-bottom: 1.5rem;
 }
 
-.features-heading {
+.features h2 {
   margin: 0;
   margin-bottom: 2.2rem;
   padding: 0;
@@ -287,7 +287,7 @@ img {
 }
 
 .feature-item {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .feature-item p {
@@ -311,6 +311,80 @@ img {
   .feature-text h3 {
     margin-top: 20px;
   }
+}
+
+.departments {
+  margin-bottom: 20px;
+}
+
+.departments h2 {
+  margin: 0;
+  margin-bottom: 2.2rem;
+  padding: 0;
+
+  font-size: 38px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.departments-link {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  /* width: 300px; */
+  min-height: 300px;
+  display: block;
+
+  /* border: 1px solid #747474; */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .6);
+  transition: .5s ease all;
+  overflow: hidden;
+}
+
+.departments-link img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.departments-link:hover {
+  text-decoration: none;
+
+  box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
+  transform: translateY(-15px);
+}
+
+.departments-link-heading {
+  position: relative;
+
+  min-height: 70px;
+
+  /* border-left: 1px solid #747474;
+  border-right: 1px solid #747474;
+  border-bottom: 1px solid #747474;
+
+  overflow: hidden; */
+}
+
+.departments-link-heading::before {
+  position: absolute;
+  content: "";
+  top: -29px;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.departments-link-heading h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #105599;
+}
+
+.departments-link:hover h3 {
+  color: #747474;
 }
 
 .footer-navigation {
