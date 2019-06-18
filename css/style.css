@@ -387,6 +387,10 @@ img {
   color: #747474;
 }
 
+.location {
+  margin-bottom: 50px;
+}
+
 .footer-navigation {
   background-color: #d5e3f6;
 }
