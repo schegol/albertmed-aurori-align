@@ -297,6 +297,7 @@ img {
   color: #fff;
 
   background-color: #105599;
+    background-image: linear-gradient(-10deg, #105599 20%, #1262b3 50%, #105599 80%);
   /* background-image: url("../img/bg-wave-top.svg");
   background-repeat: no-repeat;
   background-position: top;
@@ -339,6 +340,10 @@ img {
 
 .feature-item {
   margin-bottom: 50px;
+}
+
+.feature-image-rotate {
+  transform: scaleX(-1);
 }
 
 .feature-item p {
