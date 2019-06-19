@@ -252,6 +252,9 @@ img {
   .clinic-contacts-wrap {
     justify-content: center;
   }
+  .appointment {
+    margin-top: 10px;
+  }
 }
 
 
@@ -295,9 +298,13 @@ img {
   background-size: auto; */
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
 .features-bg-top {
   position: absolute;
-  top: -1px;
+  top: -2px;
   left: 0;
   right: 0;
   width: 100%;
@@ -306,7 +313,7 @@ img {
 
 .features-bg-bottom {
   position: absolute;
-  bottom: -1px;
+  bottom: -2px;
   left: 0;
   right: 0;
   width: 100%;
@@ -336,9 +343,10 @@ img {
 .feature-item p {
   margin-bottom: 0;
 
-  font-size: 20px;
+  font-family: "IBM Plex Sans", "Arial", sans-serif;
+  font-size: 18px;
   line-height: 28px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -432,6 +440,12 @@ img {
 
 .location {
   margin-bottom: 50px;
+}
+
+.location-description {
+  font-family: "IBM Plex Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .footer-navigation {
