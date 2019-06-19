@@ -63,6 +63,20 @@ img {
   color: #000;
 }
 
+.nav-link-active {
+  position: relative;
+}
+
+.nav-link-active::before {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: .35rem;
+  right: .35rem;
+  height: 3px;
+  background-color: #105599;
+}
+
 .navbar-light .nav-item .nav-link:hover,
 .navbar-light .nav-item .nav-link:focus {
   background-color: #d5e3f6;
