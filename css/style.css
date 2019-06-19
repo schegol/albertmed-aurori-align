@@ -1,6 +1,6 @@
 body {
   font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: normal;
   line-height: 30px;
   overflow-x: hidden;
@@ -97,8 +97,8 @@ img {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: .25rem;
-    padding-left: .25rem;
+    padding-right: .35rem;
+    padding-left: .35rem;
 }
 
 .dropdown-menu {
@@ -276,6 +276,10 @@ img {
     flex-direction: column;
     align-items: center;
   }
+  .features h2,
+  .departments h2 {
+    font-size: 32px;
+  }
 }
 
 .main-heading {
@@ -406,7 +410,8 @@ img {
   margin: 0;
 }
 
-.departments-link:hover {
+.departments-link:hover,
+.departments-link:focus {
   text-decoration: none;
 
   box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
