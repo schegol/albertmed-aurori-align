@@ -128,8 +128,15 @@ img {
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, 1);
-    border: none;
+  color: rgba(0, 0, 0, 1);
+
+  border: 1px solid #747474;
+  background-color: transparent;
+  transition: .2s background-color ease;
+}
+
+.navbar-light .navbar-toggler:hover {
+  background-color: #d5e3f6;
 }
 
 .navbar-toggler span {
@@ -148,9 +155,17 @@ img {
   font-size: 24px;
 }
 
-.header-contacts-wrap .container {
-  padding-left: 70px;
-  padding-right: 70px;
+.clinic-contacts-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.clinic-contacts-wrap.row {
+  margin-left: 25px;
+  margin-right: 0;
 }
 
 .clinic-contacts-wrap span,
@@ -177,7 +192,7 @@ img {
 }
 
 .clinic-contacts-wrap a::before {
-  left: -29px;
+  left: -25px;
   top: 3px;
 
   background-image: url("../img/phone.svg");
@@ -225,7 +240,35 @@ img {
 .btn-success:not(:disabled):not(.disabled):active:focus,
 .show > .btn-success.dropdown-toggle:focus,
 .btn-success.focus, .btn-success:focus {
-    box-shadow: 0 0 4px .2rem rgba(72, 180, 97, .4);
+  box-shadow: 0 0 4px .2rem rgba(72, 180, 97, .4);
+}
+
+.header-contacts .container {
+  justify-content: space-between;
+}
+
+@media (max-width: 767.98px) {
+  .header-contacts .container,
+  .clinic-contacts-wrap {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 527.98px) {
+  .header-address {
+    margin-right: 0;
+  }
+  .clinic-contacts-wrap {
+    flex-direction: column;
+    align-items: center;
+
+    /* text-align: center; */
+  }
+  .header-contacts .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .main-heading {
