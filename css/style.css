@@ -490,7 +490,6 @@ img {
 }
 
 .footer-navigation-contacts {
-  /* margin-bottom: 30px; */
   margin-top: 30px;
 }
 
@@ -566,8 +565,6 @@ img {
 .footer-navigation-menu a:focus {
   color: #747474;
 }
-
-/*Низ футера VVV*/
 
 .footer-copyrights {
   background-color: #105599;
@@ -743,4 +740,112 @@ img {
   .appointment-form fieldset {
     justify-content: center;
   }
+}
+
+.header-inner {
+  margin-bottom: 50px;
+}
+
+.inner-heading {
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.card {
+  /* padding: 0;
+  margin-left: 15px;
+  margin-right: 15px; */
+  padding-bottom: 1rem;
+  margin-bottom: 30px;
+
+  border: 1px solid #747474;
+
+  overflow: hidden;
+}
+
+.card-image-wrap {
+  position: relative;
+  flex-shrink: 0;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  /* height: 100%; */
+  /* height: auto; */
+
+  border: none;
+  border-radius: 0;
+}
+
+.card-img {
+  height: auto;
+  /* flex-shrink: 0;
+  flex-grow: 0; */
+}
+
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-overlay h3 {
+  margin-bottom: 0;
+
+  color: #fff;
+  font-size: 38px;
+  line-height: 44px;
+  text-transform: uppercase;
+  text-align: center;
+
+  text-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+}
+
+.card-block {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  text-align: center;
+}
+
+.card-block h4 {
+  margin-top: 15px;
+  margin-bottom: 0;
+
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.card-subtitle {
+  margin-bottom: .5rem;
+
+  font-size: .8rem;
+  color: #747474;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-family: "IBM Plex Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.card-block .btn {
+  text-transform: uppercase;
+
+  background-color: #338235;
+}
+
+.card-block .btn-success:hover,
+.card-block .btn-success:focus {
+  color: #fff;
+
+  background-color: #2e7530;
+  border-color: #87b288;
+}
+
+.offers {
+  margin-bottom: 20px;
 }
