@@ -752,10 +752,16 @@ img {
   text-align: center;
 }
 
+.card-container {
+  display: flex;
+  align-items: stretch;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .card {
-  /* padding: 0;
-  margin-left: 15px;
-  margin-right: 15px; */
+  padding-left: 0;
+  padding-right: 0;
   padding-bottom: 1rem;
   margin-bottom: 30px;
 
@@ -804,10 +810,18 @@ img {
 }
 
 .card-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-left: 15px;
   padding-right: 15px;
+  height: 100%;
 
   text-align: center;
+}
+
+.card-block-filler {
+  flex-grow: 1;
 }
 
 .card-block h4 {
