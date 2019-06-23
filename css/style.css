@@ -769,6 +769,14 @@ footer {
   text-align: center;
 }
 
+.inner-section-description {
+  margin-bottom: 30px;
+
+  font-family: "IBM Plex Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 .offers .card-container {
   display: flex;
   align-items: stretch;
@@ -881,12 +889,8 @@ footer {
   margin-bottom: 20px;
 }
 
-.price-description {
-  margin-bottom: 30px;
-
-  font-family: "IBM Plex Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 28px;
+.price-description:first-of-type {
+  margin-bottom: 15px;
 }
 
 .price-accordion {
