@@ -854,6 +854,7 @@ main {
 .offers .card-block h4 {
   margin-top: 15px;
   margin-bottom: 0;
+  width: 100%;
 
   font-size: 26px;
   line-height: 32px;
@@ -861,6 +862,7 @@ main {
 
 .offers .card-subtitle {
   margin-bottom: .5rem;
+  width: 100%;
 
   font-size: .8rem;
   color: #747474;
@@ -868,6 +870,8 @@ main {
 }
 
 .offers .card-text {
+  width: 100%;
+
   font-family: "IBM Plex Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 28px;
