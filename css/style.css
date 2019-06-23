@@ -849,6 +849,7 @@ main {
 
 .offers .card-block-filler {
   flex-grow: 1;
+  max-height: 100%;
 }
 
 .offers .card-block h4 {
