@@ -923,9 +923,16 @@ img {
   display: flex;
   padding: 15px;
 
+  hyphens: auto;
   vertical-align: middle;
 
   border: none;
+}
+
+@media (max-width: 575.98px) {
+  .price-table td {
+    font-size: 15px;
+  }
 }
 
 .service-name {
@@ -975,7 +982,7 @@ img {
   position: absolute;
   content: "";
   width: 15px;
-  height: 3px;
+  height: 4px;
   background-color: #747474;
   right: 0.75rem;
   top: 45%;
@@ -987,7 +994,7 @@ img {
   position: absolute;
   content: "";
   width: 15px;
-  height: 3px;
+  height: 4px;
   background-color: #747474;
   right: 0.75rem;
   top: 45%;
