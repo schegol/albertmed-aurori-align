@@ -966,3 +966,38 @@ img {
   /* margin-left: 1rem; */
   color: #ce2020;
 }
+
+.card-header-price h3 {
+  position: relative;
+}
+
+.card-header-price h3::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: #747474;
+  right: 0.75rem;
+  top: 45%;
+  transform: rotate(90deg);
+  transition: .1s transform linear;
+}
+
+.card-header-price h3::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: #747474;
+  right: 0.75rem;
+  top: 45%;
+}
+
+.card-header-price h3[aria-expanded="true"]::before {
+  transform: rotate(0deg);
+}
+
+.card-header-price:hover h3::before,
+.card-header-price:hover h3::after {
+  background-color: #105599;
+}
