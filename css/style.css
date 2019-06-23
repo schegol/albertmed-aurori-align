@@ -1,8 +1,14 @@
 body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
   font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-weight: normal;
   line-height: 30px;
+
   overflow-x: hidden;
 }
 
@@ -11,21 +17,17 @@ img {
   height: auto;
 }
 
-html, body {
-  height: 100%;
+html {
+  display: flex;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+header,
+footer {
+  flex-shrink: 0;
 }
 
 main {
-  flex: 1 0 auto;
-}
-
-footer {
-  flex-shrink: 0;
+  flex-grow: 1;
 }
 
 .features h2,
@@ -759,8 +761,8 @@ footer {
   }
 }
 
-.header-inner {
-  margin-bottom: 50px;
+.main-inner {
+  margin-top: 50px;
 }
 
 .inner-heading {
