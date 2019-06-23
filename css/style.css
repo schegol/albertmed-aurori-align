@@ -14,13 +14,16 @@ img {
 html, body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
 }
+
 main {
   flex: 1 0 auto;
 }
+
 footer {
   flex-shrink: 0;
 }
@@ -984,15 +987,28 @@ footer {
 }
 
 .new-price {
-  /* margin-left: 1rem; */
   color: #ce2020;
 }
 
-.card-header-price h3 {
+.btn-accordion {
+  width: 100%;
+}
+
+.btn-accordion:hover,
+.btn-accordion:focus {
+  text-decoration: none;
+}
+
+.btn-accordion:hover h3,
+.btn-accordion:focus h3 {
+  color: #105599;
+}
+
+.btn-accordion h3 {
   position: relative;
 }
 
-.card-header-price h3::before {
+.btn-accordion h3::before {
   position: absolute;
   content: "";
   width: 15px;
@@ -1004,7 +1020,7 @@ footer {
   transition: .1s transform linear;
 }
 
-.card-header-price h3::after {
+.btn-accordion h3::after {
   position: absolute;
   content: "";
   width: 15px;
@@ -1014,11 +1030,13 @@ footer {
   top: 45%;
 }
 
-.card-header-price h3[aria-expanded="true"]::before {
+.btn-accordion[aria-expanded="true"] h3::before {
   transform: rotate(0deg);
 }
 
-.card-header-price:hover h3::before,
-.card-header-price:hover h3::after {
+.btn-accordion:hover h3::before,
+.btn-accordion:hover h3::after,
+.btn-accordion:focus h3::before,
+.btn-accordion:focus h3::after {
   background-color: #105599;
 }
