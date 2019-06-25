@@ -648,7 +648,7 @@ main {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(rgba(16, 85, 153, .5) 15%, rgba(255, 255, 255, .5));
+  background-image: linear-gradient(rgba(16, 85, 153, .4) 15%, rgba(255, 255, 255, .5));
   opacity: 1;
   transition: .5s ease opacity;
 }
