@@ -63,16 +63,45 @@
     </header>
     <main>
       <div class="main-slider container-fluid">
-
+        <!-- <img src="img/main.jpg" width="2560" height="1596" alt=""> -->
+        <div class="container">
+          <h1 class="main-heading">«АльбертМед» — клиника №1 города Верхоянска!<sup>*</sup><br>
+            <span><sup>*</sup>по мнению некоторых клиентов</span>
+          </h1>
+        </div>
       </div>
 
-      <div class="container">
-        <h1 class="main-heading">«АльбертМед» — клиника №1 города Верхоянска!<sup>*</sup><br>
-          <span><sup>*</sup>по мнению некоторых клиентов</span>
-        </h1>
-      </div>
 
 
+      <section class="counters">
+        <div class="container">
+          <h2 class="animated fadeIn wow" data-wow-duration=".3s" data-wow-delay=".2s">«АльбертМед» — уже классика</h2>
+          <div class="row counter-row" id="counters">
+            <div class="counter-wrap col-xs-12 col-sm-4 d-flex justify-content-center animate fadeInLeft wow" data-wow-duration-".6s">
+              <div class="counter-box d-flex flex-column justify-content-end">
+                <span class="timer counter-number counter-number-doctors" data-from="0" data-to="10" data-speed="1200">10</span>
+                <p class="counter-text">лучших врачей</p>
+              </div>
+            </div>
+            <div class="counter-wrap col-xs-12 col-sm-4 d-flex justify-content-center animate fadeIn wow" data-wow-duration-".6s" data-wow-delay=".2s">
+              <div class="counter-box d-flex flex-column justify-content-end">
+                <span class="timer counter-number counter-number-years" data-from="0" data-to="14" data-speed="1200">14</span>
+                <p class="counter-text">лет на рынке медуслуг</p>
+              </div>
+            </div>
+            <div class="counter-wrap col-xs-12 col-sm-4 d-flex justify-content-center">
+              <div class="counter-box d-flex flex-column justify-content-end animate fadeInRight wow" data-wow-duration-".6s">
+                <span class="timer counter-number counter-number-clients" data-from="0" data-to="312" data-speed="1200">312</span>
+                <p class="counter-text">довольных клиентов</p>
+              </div>
+            </div>
+          </div>
+          <p class="counters-description animate fadeInUp wow" data-wow-duration-".3s">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus atque ipsa adipisci accusantium repellat dolorum in ad nobis quo archi tecto consequatur non autem commodi, expedita sapiente nemo, aliquid dolore nihil.<br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus atque ipsa adipisci accusantium repellat dolorum in ad nobis quo architecto consequatur non autem commodi, expedita sapiente nemo, aliquid dolore nihil.
+          </p>
+        </div>
+      </section>
 
       <section class="features">
         <img class="features-bg-top" src="img/bg-wave-top.svg">
@@ -82,7 +111,7 @@
             <div class="feature-image col-md-6 align-self-center animated fadeIn wow" data-wow-duration=".6s" data-wow-delay=".1s">
               <img src="img/experience.jpg" alt="Опытные врачи">
             </div>
-            <div class="feature-text col-md-6 align-self-center animated fadeInRight wow" data-wow-duration=".6s">
+            <div class="feature-text col-md-6 align-self-center animated fadeInRight wow" data-wow-duration=".6s" data-wow-offset="50">
               <h3>
                 Опытные врачи
               </h3>
@@ -92,7 +121,7 @@
             </div>
           </div>
           <div class="feature-item row">
-            <div class="feature-text col-md-6 order-last order-md-first align-self-center animated fadeInLeft wow" data-wow-duration=".6s">
+            <div class="feature-text col-md-6 order-last order-md-first align-self-center animated fadeInLeft wow" data-wow-duration=".6s" data-wow-offset="50">
               <h3>
                 Лучшие цены
               </h3>
@@ -108,7 +137,7 @@
             <div class="feature-image col-md-6 align-self-center animated fadeIn wow" data-wow-duration=".6s" data-wow-delay=".1s">
               <img src="img/candy.jpg" alt="Вкусные конфеты">
             </div>
-            <div class="feature-text col-md-6 align-self-center animated fadeInRight wow" data-wow-duration=".6s">
+            <div class="feature-text col-md-6 align-self-center animated fadeInRight wow" data-wow-duration=".6s" data-wow-offset="50">
               <h3>
                 Настоящие сладости
               </h3>
@@ -181,7 +210,8 @@
           </div>
         </div>
       </section>
-    </main>
+
+    </main
 
     <footer>
       <section class="footer-navigation">
@@ -284,7 +314,7 @@
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
@@ -299,5 +329,6 @@
       )
       wow.init();
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
