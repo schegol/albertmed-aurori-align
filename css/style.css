@@ -163,7 +163,7 @@ main {
     color: #000;
 }
 
-@media (max-width: 991px) and (min-width: 0px) {
+@media (max-width: 990.98px) and (min-width: 0px) {
   .navbar-light .navbar-nav .nav-link {
     padding-left: 0;
     transition: padding-left .5s ease;
@@ -233,7 +233,7 @@ main {
   padding-top: 20px;
   padding-bottom: 20px;
 
-  font-size: 24px;
+  font-size: 23px;
 }
 
 .clinic-contacts-wrap {
@@ -360,12 +360,61 @@ main {
 }
 
 .main-heading {
-  font-size: 2em;
+  padding: 15px 15px 0 15px;
+  margin-bottom: 0;
+
+  font-size: 2.5em;
   line-height: 1.2em;
 }
 
 .main-heading span {
   font-size: .3em;
+}
+
+.introductions {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 50px;
+  min-height: 650px;
+  background-image: url("../img/introductions-bg-big.png");
+  background-repeat: no-repeat;
+  background-size: 2560px auto;
+  background-position: 50% 0;
+}
+
+.introductions .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main-heading-wrap {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+@media (max-width: 1199.98px) {
+  .introductions {
+    min-height: 500px;
+    background-image: url("../img/introductions-bg-medium.png");
+    background-size: auto 100%;
+  }
+  .main-heading {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .introductions {
+    min-height: 400px;
+    background-image: url("../img/introductions-bg-small.png");
+    background-size: auto 100%;
+  }
+  .main-heading {
+    font-size: 1.7em;
+  }
 }
 
 .counters {
@@ -497,6 +546,12 @@ main {
   padding-bottom: 1.5rem;
 }
 
+@media (min-width: 767.98px) and (max-width: 992.98px) {
+  .features .container {
+    padding-bottom: 0;
+  }
+}
+
 .features h2 {
   margin: 0;
   margin-bottom: 2.2rem;
@@ -535,7 +590,7 @@ main {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .feature-item .feature-text {
     text-align: center;
   }

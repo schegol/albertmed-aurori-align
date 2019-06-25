@@ -62,41 +62,40 @@
       </div>
     </header>
     <main>
-      <div class="main-slider container-fluid">
-        <!-- <img src="img/main.jpg" width="2560" height="1596" alt=""> -->
-        <div class="container">
-          <h1 class="main-heading">«АльбертМед» — клиника №1 города Верхоянска!<sup>*</sup><br>
-            <span><sup>*</sup>по мнению некоторых клиентов</span>
-          </h1>
+      <section class="introductions">
+        <div class="container text-center animated fadeIn wow d-flex justify-content-center align-items-center" data-wow-duration=".6s" data-wow-delay=".3s">
+          <div class="main-heading-wrap">
+            <h1 class="main-heading">«АльбертМед» — клиника №1 города Верхоянска!<sup>*</sup><br>
+              <span><sup>*</sup>по мнению некоторых клиентов</span>
+            </h1>
+          </div>
         </div>
-      </div>
-
-
+      </section>
 
       <section class="counters">
         <div class="container">
           <h2 class="animated fadeIn wow" data-wow-duration=".3s" data-wow-delay=".2s">«АльбертМед» — уже классика</h2>
           <div class="row counter-row" id="counters">
-            <div class="counter-wrap col-xs-12 col-sm-4 d-flex justify-content-center animate fadeInLeft wow" data-wow-duration-".6s">
+            <div class="counter-wrap col-xs-12 col-sm-4 d-flex justify-content-center animate fadeInLeft wow" data-wow-duration=".6s">
               <div class="counter-box d-flex flex-column justify-content-end">
                 <span class="timer counter-number counter-number-doctors" data-from="0" data-to="10" data-speed="1200">10</span>
                 <p class="counter-text">лучших врачей</p>
               </div>
             </div>
-            <div class="counter-wrap col-xs-12 col-sm-4 d-flex justify-content-center animate fadeIn wow" data-wow-duration-".6s" data-wow-delay=".2s">
+            <div class="counter-wrap col-xs-12 col-sm-4 d-flex justify-content-center animate fadeIn wow" data-wow-duration=".6s" data-wow-delay=".2s">
               <div class="counter-box d-flex flex-column justify-content-end">
                 <span class="timer counter-number counter-number-years" data-from="0" data-to="14" data-speed="1200">14</span>
                 <p class="counter-text">лет на рынке медуслуг</p>
               </div>
             </div>
             <div class="counter-wrap col-xs-12 col-sm-4 d-flex justify-content-center">
-              <div class="counter-box d-flex flex-column justify-content-end animate fadeInRight wow" data-wow-duration-".6s">
+              <div class="counter-box d-flex flex-column justify-content-end animate fadeInRight wow" data-wow-duration=".6s">
                 <span class="timer counter-number counter-number-clients" data-from="0" data-to="312" data-speed="1200">312</span>
                 <p class="counter-text">довольных клиентов</p>
               </div>
             </div>
           </div>
-          <p class="counters-description animate fadeInUp wow" data-wow-duration-".3s">
+          <p class="counters-description animate fadeInUp wow" data-wow-duration=".3s">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus atque ipsa adipisci accusantium repellat dolorum in ad nobis quo archi tecto consequatur non autem commodi, expedita sapiente nemo, aliquid dolore nihil.<br>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus atque ipsa adipisci accusantium repellat dolorum in ad nobis quo architecto consequatur non autem commodi, expedita sapiente nemo, aliquid dolore nihil.
           </p>
@@ -104,7 +103,7 @@
       </section>
 
       <section class="features">
-        <img class="features-bg-top" src="img/bg-wave-top.svg">
+        <img class="features-bg-top" src="img/bg-wave-top.svg" alt="Верхняя часть фона секции">
         <div class="container">
           <h2 class="animated fadeIn wow" data-wow-duration=".3s" data-wow-delay=".2s">Почему нас выбирают</h2>
           <div class="feature-item row">
@@ -147,7 +146,7 @@
             </div>
           </div>
         </div>
-        <img class="features-bg-bottom" src="img/bg-wave-bottom.svg">
+        <img class="features-bg-bottom" src="img/bg-wave-bottom.svg" alt="Нижняя часть фона секции">
       </section>
 
       <section class="departments container">
@@ -218,8 +217,7 @@
           </div>
         </div>
       </section>
-
-    </main
+    </main>
 
     <footer>
       <section class="footer-navigation">
@@ -267,8 +265,8 @@
         <div class="modal-body">
           <form class="appointment-form" action="#" method="post">
             <fieldset>
+              <legend class="visually-hidden">Выберите врача, дату и время приема</legend>
               <div class="row">
-                <legend class="visually-hidden">Выберите врача, дату и время приема</legend>
                 <label class="col-sm-4">
                   Ваше имя
                   <input class="form-control" type="text" placeholder="Андрей" required>
@@ -301,15 +299,15 @@
                 </label>
                 <label class="col-sm-6">
                   Желаемая дата
-                  <input class="form-control" type="date" value="01.01.2020" required>
+                  <input class="form-control" type="text" placeholder="01.01.2020" required>
                 </label>
                 <label class="col-sm-6">
                   Желаемое время
-                  <input class="form-control" type="time" placeholder="11:00" required>
+                  <input class="form-control" type="text" placeholder="11:00" required>
                 </label>
                 <label class="col">
                   Комментарий (опционально)
-                  <textarea class="form-control" type="text" placeholder="Могу задержатсья на 10 минут"></textarea>
+                  <textarea class="form-control" placeholder="Могу задержатсья на 10 минут"></textarea>
                 </label>
               </div>
             </fieldset>
