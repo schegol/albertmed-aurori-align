@@ -581,12 +581,34 @@ main {
   margin: 0;
 }
 
+.departments-image-overlay {
+  display: inline-block;
+  position: relative;
+}
+
+.departments-image-overlay::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(rgba(16, 85, 153, .5) 15%, rgba(255, 255, 255, .5));
+  opacity: 1;
+  transition: .5s ease opacity;
+}
+
 .departments-link:hover,
 .departments-link:focus {
   text-decoration: none;
 
   box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
   transform: translateY(-15px);
+}
+
+.departments-link:hover .departments-image-overlay::after,
+.departments-link:focus .departments-image-overlay::after {
+  opacity: 0;
 }
 
 .departments-link-heading {
