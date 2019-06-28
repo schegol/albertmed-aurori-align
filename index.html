@@ -207,7 +207,8 @@
                 Мы открыты каждый день c 10:00 до 21:00.
               </p>
             </div>
-            <div class="location-map col-lg-6 animated fadeInRight wow" id="yandexMap" data-wow-duration=".6s">
+            <div class="location-map col-lg-6 animated fadeInRight wow" data-wow-duration=".6s">
+              <div class="yandex-map" id="yandex-map-script"></div>
               <a href="contacts.html">
                 <img width="690" height="402" src="img/map.png" alt="г. Верхоянск, ул. Кирова, д. 28">
               </a>
@@ -333,6 +334,7 @@
       )
       wow.init();
     </script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

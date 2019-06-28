@@ -109,6 +109,8 @@ function isScrolledIntoView(el) {
 }
 
 $(window).on('scroll', function() {
+
+
   if (isScrolledIntoView(document.getElementById('counters'))) {
     $('.counter-number').countTo();
 
@@ -127,4 +129,35 @@ function myFunction() {
         //do stuff
         functionIsRunning = false;
     }
+}
+
+//map://
+var mapInteractive = document.querySelector(".yandex-map");
+if (mapInteractive) {
+  ymaps.ready(function () {
+      var myMap = new ymaps.Map('yandex-map-script', {
+              center: [67.551809, 133.388456],
+              zoom: 17
+          }, {
+              searchControlProvider: 'yandex#search'
+          }),
+
+          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+              '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+          ),
+
+          myPlacemarkWithContent = new ymaps.Placemark([67.551809, 133.388456], {
+              hintContent: 'Клиника «АльбертМед»',
+              balloonContent: 'Клиника «АльбертМед»',
+          }, {
+              iconLayout: 'default#imageWithContent',
+              iconImageSize: [42, 48],
+              iconImageOffset: [-12, -48],
+              iconContentOffset: [15, 15],
+              iconContentLayout: MyIconContentLayout
+          });
+
+      myMap.geoObjects
+          .add(myPlacemarkWithContent);
+  });
 }
