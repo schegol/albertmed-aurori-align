@@ -1161,10 +1161,6 @@ main {
   text-decoration: none;
 }
 
-/* .collapse.show + .card-header {
-  background-color: #105599;
-} */
-
 .price-accordion .card-body {
   padding: 0;
 
@@ -1280,4 +1276,8 @@ main {
 .btn-accordion:focus h3::before,
 .btn-accordion:focus h3::after {
   background-color: #105599;
+}
+
+.acceptance-description {
+  margin-bottom: 50px;
 }
