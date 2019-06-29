@@ -266,20 +266,20 @@
             <fieldset>
               <legend class="visually-hidden">Выберите врача, дату и время приема</legend>
               <div class="row">
-                <label class="col-sm-4">
-                  Ваше имя
+                <label class="appointment-form-name col-sm-4">
+                  Ваше имя*
                   <input class="form-control" type="text" placeholder="Андрей" required>
                 </label>
                 <label class="col-sm-4">
-                  Ваша фамилия
+                  Ваша фамилия*
                   <input class="form-control" type="text" placeholder="Андреев" required>
                 </label>
                 <label class="col-sm-4">
-                  Ваш телефон
+                  Ваш телефон*
                   <input class="form-control" type="number" placeholder="84116533333" required>
                 </label>
                 <label class="col-sm-6">
-                  Отделение
+                  Отделение*
                   <select id="department" class="form-control" required>
                     <option value="">---</option>
                     <option value="cosmetology">Косметология</option>
@@ -289,7 +289,7 @@
                   </select>
                 </label>
                 <label class="col-sm-6">
-                  Врач
+                  Врач*
                   <select id="doctor" class="form-control" required>
                     <option value="">---</option>
                     <option value="any-doctor" data-chained="cosmetology physiotherapy gastroenterology cardiology">Любой врач отделения</option>
@@ -306,11 +306,11 @@
                   </select>
                 </label>
                 <label class="col-sm-6">
-                  Желаемая дата
+                  Желаемая дата*
                   <input class="form-control" type="text" placeholder="01.01.2020" required>
                 </label>
                 <label class="col-sm-6">
-                  Желаемое время
+                  Желаемое время*
                   <input class="form-control" type="text" placeholder="11:00" required>
                 </label>
                 <label class="col">
