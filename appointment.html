@@ -35,10 +35,10 @@
                 <a class="nav-link" href="price.html">Цены на услуги</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-active" href="offers.html">Специальные предложения</a>
+                <a class="nav-link" href="offers.html">Специальные предложения</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">О клинике</a>
+                <a class="nav-link nav-link-active" href="about.html">О клинике</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contacts.html">Контакты</a>
@@ -55,76 +55,81 @@
               <span class="header-address col-xs-12">г. Верхоянск, ул. Кирова, д. 28</span>
               <a class="header-phone col-xs-12" href="phone:+74116533333">8 (41165) 333-33</a>
             </div>
-            <a class="btn btn-success nav-link appointment" href="appointment.html" data-toggle="modal" data-target="#modalAppointment">Записатсья на прием</a>
+            <a class="btn btn-success nav-link appointment" href="contacts.html" data-toggle="modal" data-target="#modalAppointment">Записатсья на прием</a>
           </div>
         </section>
       </div>
     </header>
+
     <main class="main-inner">
-      <div class="container">
-        <div class="inner-heading">
-          <h1>Специальные предложения</h1>
+      <section class="inner-appointment container">
+        <div class="inner-heading inner-appointment-heading">
+          <h1>Форма записи на прием</h1>
         </div>
-        <section class="offers">
-          <h2 class="visually-hidden">Актуальные спецпредложения</h2>
-          <p class="inner-section-description offers-description">
-            На этой странице собраны акции и специальные предлоежния нашей клиники, актуальные на данный момент. Если вы любите получать хороший сервис с большими скидками, обязательно заглядывайте сюда почаще!
-          </p>
-          <div class="row">
-            <div class="card-container col-md-6">
-              <article class="card">
-                <div class="card-image-wrap">
-                  <img class="card-img" src="img/offer-bg.png" width="600" height="400" alt="Специальное предложение для клиентов">
-                  <div class="card-overlay">
-                    <h3 class="card-title">-50% на первое посещение</h3>
-                  </div>
-                </div>
-                <div class="card-block">
-                  <h4 class="card-title">-50% на первое посещение клиники</h4>
-                  <p class="card-subtitle">Только до 31.01.20</p>
-                  <p class="card-text">Если вы никогда раньше не были в клинике «АльбертМед», сейчас самое время нанести первый визит! Только до конца января: первое посещение любого специалиста для новых клиентов за полцены!</p>
-                  <div class="card-block-filler"></div>
-                  <a class="btn btn-success" href="price.html">Посмотреть все цены</a>
-                </div>
-              </article>
+        <div class="inner-appointment-form">
+          <form class="appointment-form" action="#" method="post">
+            <fieldset>
+              <legend class="visually-hidden">Выберите врача, дату и время приема</legend>
+              <div class="row">
+                <label class="col-sm-4">
+                  Ваше имя*
+                  <input class="form-control" type="text" placeholder="Андрей" required>
+                </label>
+                <label class="col-sm-4">
+                  Ваша фамилия*
+                  <input class="form-control" type="text" placeholder="Андреев" required>
+                </label>
+                <label class="col-sm-4">
+                  Ваш телефон*
+                  <input class="form-control" type="number" placeholder="84116533333" required>
+                </label>
+                <label class="col-sm-6">
+                  Отделение*
+                  <select id="department-inner" class="form-control" required>
+                    <option value="">---</option>
+                    <option value="cosmetology">Косметология</option>
+                    <option value="physiotherapy">Физиотерапия</option>
+                    <option value="gastroenterology">Гастроэнтерология</option>
+                    <option value="cardiology">Кардиология</option>
+                  </select>
+                </label>
+                <label class="col-sm-6">
+                  Врач*
+                  <select id="doctor-inner" class="form-control" required>
+                    <option value="">---</option>
+                    <option value="any-doctor" data-chained="cosmetology physiotherapy gastroenterology cardiology">Любой врач отделения</option>
+                    <option value="lavrova" data-chained="cosmetology">Лаврова Г.И.</option>
+                    <option value="myshakova" data-chained="cosmetology">Мышакова С.Ю.</option>
+                    <option value="sergeenko" data-chained="cosmetology" disabled>Сергеенко И.В.</option>
+                    <option value="ogonkov" data-chained="physiotherapy">Огоньков Ю.М.</option>
+                    <option value="popova" data-chained="physiotherapy">Попова А.А.</option>
+                    <option value="serov" data-chained="gastroenterology">Серов Е.А.</option>
+                    <option value="levin" data-chained="gastroenterology">Левин М.О.</option>
+                    <option value="kozyreva" data-chained="cardiology">Козырева И.А.</option>
+                    <option value="katz" data-chained="cardiology">Кац В.В.</option>
+                    <option value="soldatkin" data-chained="cardiology">Солдаткин Ф.П.</option>
+                  </select>
+                </label>
+                <label class="col-sm-6">
+                  Желаемая дата*
+                  <input class="form-control" type="text" placeholder="01.01.2020" required>
+                </label>
+                <label class="col-sm-6">
+                  Желаемое время*
+                  <input class="form-control" type="text" placeholder="11:00" required>
+                </label>
+                <label class="col">
+                  Комментарий (опционально)
+                  <textarea class="form-control" placeholder="Могу задержатсья на 10 минут" rows="8"></textarea>
+                </label>
+              </div>
+            </fieldset>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-success" type="submit">Записаться к врачу</button>
             </div>
-            <div class="card-container col-md-6">
-              <article class="card">
-                <div class="card-image-wrap">
-                  <img class="card-img" src="img/offer-bg.png" width="600" height="400" alt="Специальное предложение для клиентов">
-                  <div class="card-overlay">
-                    <h3 class="card-title">Приведи друга — получи скидку</h3>
-                  </div>
-                </div>
-                <div class="card-block">
-                  <h4 class="card-title">Приведи друга в «АльбертМед» и получи скидку 1000 рублей</h4>
-                  <p class="card-subtitle">Только до 31.01.20</p>
-                  <p class="card-text">Нравится клиника «АльбертМед»? Любите скидки? Пора рассказать о нас друзьям!<br>Только до 31 января: приведите друга, который никогда у нас не был, в нашу клинику и получи скидку 1000 рублей на любую услугу!</p>
-                  <div class="card-block-filler"></div>
-                  <a class="btn btn-success" href="price.html">Посмотреть все цены</a>
-                </div>
-              </article>
-            </div>
-            <div class="card-container col-md-6">
-              <article class="card">
-                <div class="card-image-wrap">
-                  <img class="card-img" src="img/offer-bg.png" width="600" height="400" alt="Специальное предложение для клиентов">
-                  <div class="card-overlay">
-                    <h3 class="card-title">Эпиляция ступней за 550 рублей</h3>
-                  </div>
-                </div>
-                <div class="card-block">
-                  <h4 class="card-title">Лазерная эпиляция ступней за 550 рублей</h4>
-                  <p class="card-subtitle">Только до 31.02.20</p>
-                  <p class="card-text">Поспешите! Лазерная эпиляция ступней всего за 550 рублей (могут иметься противопоказания)</p>
-                  <div class="card-block-filler"></div>
-                  <a class="btn btn-success" href="price.html">Посмотреть все цены</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-      </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>

@@ -55,7 +55,7 @@
               <span class="header-address col-xs-12">г. Верхоянск, ул. Кирова, д. 28</span>
               <a class="header-phone col-xs-12" href="phone:+74116533333">8 (41165) 333-33</a>
             </div>
-            <a class="btn btn-success nav-link appointment" href="contacts.html" data-toggle="modal" data-target="#modalAppointment">Записатсья на прием</a>
+            <a class="btn btn-success nav-link appointment" href="appointment.html" data-toggle="modal" data-target="#modalAppointment">Записатсья на прием</a>
           </div>
         </section>
       </div>
@@ -243,8 +243,6 @@
           </p>
         </section>
       </div>
-
-
     </main>
 
     <footer>
@@ -284,7 +282,7 @@
       </section>
     </footer>
 
-    <div class="popup-overlay modal" id="modalAppointment" tabindex="-1" role="dialog">
+    <div class="popup-overlay modal animated fadeIn" id="modalAppointment" tabindex="-1" role="dialog">
       <section class="popup popup-appointment modal-content">
         <div class="modal-header">
           <div class="modal-title"><h2>Форма записи на прием</h2></div>
@@ -293,49 +291,58 @@
         <div class="modal-body">
           <form class="appointment-form" action="#" method="post">
             <fieldset>
+              <legend class="visually-hidden">Выберите врача, дату и время приема</legend>
               <div class="row">
-                <legend class="visually-hidden">Выберите врача, дату и время приема</legend>
                 <label class="col-sm-4">
-                  Ваше имя
+                  Ваше имя*
                   <input class="form-control" type="text" placeholder="Андрей" required>
                 </label>
                 <label class="col-sm-4">
-                  Ваша фамилия
+                  Ваша фамилия*
                   <input class="form-control" type="text" placeholder="Андреев" required>
                 </label>
                 <label class="col-sm-4">
-                  Ваш телефон
+                  Ваш телефон*
                   <input class="form-control" type="number" placeholder="84116533333" required>
                 </label>
                 <label class="col-sm-6">
-                  Отделение
-                  <select class="form-control">
+                  Отделение*
+                  <select id="department" class="form-control" required>
                     <option value="">---</option>
-                    <option value="">Косметология</option>
-                    <option value="">Физиотерапия</option>
-                    <option value="">Гастроэнтерология</option>
-                    <option value="">Кардиология</option>
+                    <option value="cosmetology">Косметология</option>
+                    <option value="physiotherapy">Физиотерапия</option>
+                    <option value="gastroenterology">Гастроэнтерология</option>
+                    <option value="cardiology">Кардиология</option>
                   </select>
                 </label>
                 <label class="col-sm-6">
-                  Врач
-                  <select class="form-control">
-                    <option value="">Любой врач отделения</option>
-                    <option value="">Лаврова Г.И.</option>
-                    <option value="">Мышакова С.Ю.</option>
+                  Врач*
+                  <select id="doctor" class="form-control" required>
+                    <option value="">---</option>
+                    <option value="any-doctor" data-chained="cosmetology physiotherapy gastroenterology cardiology">Любой врач отделения</option>
+                    <option value="lavrova" data-chained="cosmetology">Лаврова Г.И.</option>
+                    <option value="myshakova" data-chained="cosmetology">Мышакова С.Ю.</option>
+                    <option value="sergeenko" data-chained="cosmetology" disabled>Сергеенко И.В.</option>
+                    <option value="ogonkov" data-chained="physiotherapy">Огоньков Ю.М.</option>
+                    <option value="popova" data-chained="physiotherapy">Попова А.А.</option>
+                    <option value="serov" data-chained="gastroenterology">Серов Е.А.</option>
+                    <option value="levin" data-chained="gastroenterology">Левин М.О.</option>
+                    <option value="kozyreva" data-chained="cardiology">Козырева И.А.</option>
+                    <option value="katz" data-chained="cardiology">Кац В.В.</option>
+                    <option value="soldatkin" data-chained="cardiology">Солдаткин Ф.П.</option>
                   </select>
                 </label>
                 <label class="col-sm-6">
-                  Желаемая дата
-                  <input class="form-control" type="date" value="01.01.2020" required>
+                  Желаемая дата*
+                  <input class="form-control" type="text" placeholder="01.01.2020" required>
                 </label>
                 <label class="col-sm-6">
-                  Желаемое время
-                  <input class="form-control" type="time" placeholder="11:00" required>
+                  Желаемое время*
+                  <input class="form-control" type="text" placeholder="11:00" required>
                 </label>
                 <label class="col">
                   Комментарий (опционально)
-                  <textarea class="form-control" type="text" placeholder="Могу задержатсья на 10 минут"></textarea>
+                  <textarea class="form-control" placeholder="Могу задержатсья на 10 минут"></textarea>
                 </label>
               </div>
             </fieldset>
@@ -348,7 +355,7 @@
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

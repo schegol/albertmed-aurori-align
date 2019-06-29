@@ -875,7 +875,8 @@ main {
   transform: translateY(-50%);
 }
 
-.popup .form-control {
+.popup .form-control,
+.inner-appointment .form-control {
   padding: 5px 0 5px 5px;
 
   color: #000;
@@ -944,19 +945,33 @@ main {
   resize: none;
 }
 
-.popup input[type=number] {
+.inner-appointment-form textarea {
+  resize: none;
+}
+
+.popup input[type=number],
+.inner-appointment input[type=number] {
   -webkit-appearance: none;
   -moz-appearance: textfield;
 }
 
-.popup label {
+.popup label,
+.inner-appointment label {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.popup-appointment .btn {
+#department:focus option:first-of-type,
+#doctor:focus option:first-of-type,
+#department-inner:focus option:first-of-type,
+#doctor-inner:focus option:first-of-type {
+    display: none;
+}
+
+.popup-appointment .btn,
+.inner-appointment .btn {
   margin-top: 25px;
 
   color: #fff;
@@ -966,7 +981,9 @@ main {
 }
 
 .popup-appointment .btn:hover,
-.popup-appointment .btn:focus {
+.popup-appointment .btn:focus,
+.inner-appointment .btn:hover,
+.inner-appointment .btn:focus {
   color: #fff;
 
   background-color: #2e7530;
@@ -974,7 +991,9 @@ main {
 }
 
 .popup-appointment .btn:not(:disabled):not(.disabled).active,
-.popup-appointment .btn:not(:disabled):not(.disabled):active {
+.popup-appointment .btn:not(:disabled):not(.disabled):active,
+.inner-appointment .btn:not(:disabled):not(.disabled).active,
+.inner-appointment .btn:not(:disabled):not(.disabled):active {
   background-color: #28662a;
   border-color: rgba(0, 0, 0, .4);
 }
@@ -1008,6 +1027,10 @@ main {
   .appointment-form fieldset {
     justify-content: center;
   }
+}
+
+.inner-appointment {
+  margin-bottom: 50px;
 }
 
 .main-inner {
@@ -1299,9 +1322,4 @@ main {
 
 .acceptance-description {
   margin-bottom: 50px;
-}
-
-#department:focus option:first-of-type,
-#doctor:focus option:first-of-type {
-    display: none;
 }

@@ -252,5 +252,6 @@ if (mapInteractive) {
     };
 
     $("#doctor").chained("#department");
+		$("#doctor-inner").chained("#department-inner");
 
 })(window.jQuery || window.Zepto, window, document);
