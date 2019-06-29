@@ -280,20 +280,29 @@
                 </label>
                 <label class="col-sm-6">
                   Отделение
-                  <select class="form-control">
+                  <select id="department" class="form-control" required>
                     <option value="">---</option>
-                    <option value="">Косметология</option>
-                    <option value="">Физиотерапия</option>
-                    <option value="">Гастроэнтерология</option>
-                    <option value="">Кардиология</option>
+                    <option value="cosmetology">Косметология</option>
+                    <option value="physiotherapy">Физиотерапия</option>
+                    <option value="gastroenterology">Гастроэнтерология</option>
+                    <option value="cardiology">Кардиология</option>
                   </select>
                 </label>
                 <label class="col-sm-6">
                   Врач
-                  <select class="form-control">
-                    <option value="">Любой врач отделения</option>
-                    <option value="">Лаврова Г.И.</option>
-                    <option value="">Мышакова С.Ю.</option>
+                  <select id="doctor" class="form-control" required>
+                    <option value="">---</option>
+                    <option value="any-doctor" data-chained="cosmetology physiotherapy gastroenterology cardiology">Любой врач отделения</option>
+                    <option value="lavrova" data-chained="cosmetology">Лаврова Г.И.</option>
+                    <option value="myshakova" data-chained="cosmetology">Мышакова С.Ю.</option>
+                    <option value="sergeenko" data-chained="cosmetology" disabled>Сергеенко И.В.</option>
+                    <option value="ogonkov" data-chained="physiotherapy">Огоньков Ю.М.</option>
+                    <option value="popova" data-chained="physiotherapy">Попова А.А.</option>
+                    <option value="serov" data-chained="gastroenterology">Серов Е.А.</option>
+                    <option value="levin" data-chained="gastroenterology">Левин М.О.</option>
+                    <option value="kozyreva" data-chained="cardiology">Козырева И.А.</option>
+                    <option value="katz" data-chained="cardiology">Кац В.В.</option>
+                    <option value="soldatkin" data-chained="cardiology">Солдаткин Ф.П.</option>
                   </select>
                 </label>
                 <label class="col-sm-6">

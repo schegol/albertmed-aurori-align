@@ -1300,3 +1300,8 @@ main {
 .acceptance-description {
   margin-bottom: 50px;
 }
+
+#department:focus option:first-of-type,
+#doctor:focus option:first-of-type {
+    display: none;
+}
