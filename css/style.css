@@ -12,11 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 html {
   display: flex;
 }
@@ -72,6 +67,11 @@ main {
     opacity: 1;
     transform: 0;
   }
+}
+
+.main-index img {
+  max-width: 100%;
+  height: auto;
 }
 
 .counters h2,
@@ -901,6 +901,7 @@ main {
 .inner-appointment .form-control {
   padding: 5px 0 5px 5px;
 
+  font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
   color: #000;
 
   border-radius: .2rem;
@@ -1351,4 +1352,154 @@ main {
 
 .acceptance-description {
   margin-bottom: 50px;
+}
+
+.doctors-heading {
+  margin-bottom: 2rem;
+
+  text-align: center;
+}
+
+.doctors-section {
+  margin-bottom: 20px;
+}
+
+.doctors-heading h2 {
+  font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+@media (max-width: 767.98px) {
+  .doctors-heading h2 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+}
+
+.doctor-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.doctor {
+  margin-bottom: 30px;
+
+  border: 1px solid #747474;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.doctor-wrap {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.doctor-picture-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  flex-basis: 200px;
+  height: 100%;
+
+  border-right: 1px solid #747474;
+
+  overflow: hidden;
+}
+
+.doctor-picture {
+  min-height: 100%;
+  width: auto;
+  max-width: none;
+  /* height: inherit; */
+}
+
+.doctor-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 990.98px) {
+  .doctor-info {
+    border-left: none;
+  }
+  .doctor-picture-wrap {
+    display: block;
+
+    border-right: 1px solid #747474;
+  }
+}
+
+@media (max-width: 561.98px) {
+  .doctor-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .doctor-picture-wrap {
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+
+    border: 1px solid #747474;
+    border-radius: 50%;
+
+    overflow: hidden;
+  }
+}
+
+.doctor-name {
+  margin-bottom: 5px;
+
+  font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.doctor-experience {
+  margin-bottom: 15px;
+
+  font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #105599;
+}
+
+.doctor-about {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.doctor-info-filler {
+  flex-grow: 1;
+  max-height: 100%;
+}
+
+.speciality-section {
+  margin-bottom: 50px;
+}
+
+.speciality-section-description {
+  margin-bottom: 20px;
+}
+
+.speciality-section h3 {
+  margin-bottom: .3rem;
+
+  font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.speciality-section-list {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
 }
