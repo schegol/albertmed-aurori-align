@@ -1469,8 +1469,8 @@ main {
 }
 
 .doctor-about {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 19px;
+  line-height: 23px;
 }
 
 .doctor-info-filler {
@@ -1482,7 +1482,7 @@ main {
   margin-bottom: 50px;
 }
 
-.speciality-section-description {
+.speciality-description {
   margin-bottom: 20px;
 }
 
@@ -1494,8 +1494,19 @@ main {
   line-height: 25px;
 }
 
-.speciality-section-list {
+.speciality-unordered-list {
   margin-top: -20px;
   margin-bottom: 20px;
   padding-left: 20px;
+
+  list-style: disc;
+}
+
+.speciality-ordered-list {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.speciality-inner-list {
+  margin-top: 0;
 }
