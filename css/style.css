@@ -536,14 +536,14 @@ main {
   color: #fff;
 
   background-color: #105599;
-    background-image: linear-gradient(-10deg, #105599 20%, #1262b3 50%, #105599 80%);
-  /* background-image: url("../img/bg-wave-top.svg");
+
+  background-image: url("../img/bg-wave-top.svg"), url("../img/bg-wave-bottom.svg"), linear-gradient(-10deg, #105599 20%, #1262b3 50%, #105599 80%);
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: auto; */
+  background-position: top -1px center, bottom -1px center, center center;
+  background-size: 105%, 105%, 100%;
 }
 
-.features-bg-top {
+/* .features-bg-top {
   position: absolute;
   top: -2px;
   left: 0;
@@ -559,7 +559,7 @@ main {
   right: 0;
   width: 100%;
   transform: scaleX(1.05);
-}
+} */
 
 .features .container {
   /* padding-top: 1.5rem; */
