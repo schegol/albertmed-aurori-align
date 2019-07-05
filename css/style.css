@@ -202,7 +202,7 @@ main {
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
  }
 
 .dropdown-menu a {
@@ -1516,4 +1516,90 @@ main {
 
 .speciality-inner-list {
   margin-top: 0;
+}
+
+.contacts {
+  margin-bottom: 50px;
+}
+
+.contacts-text > div {
+  margin-bottom: 30px;
+}
+
+.contacts-text {
+  margin-bottom: 20px;
+}
+
+.contacts-description {
+  margin-bottom: 0;
+}
+
+.contacts-list-wrap {
+  padding: 10px 5px;
+
+  border: 1px solid #747474;
+  border-radius: 5px;
+  background-color: #d5e3f6;
+}
+
+.contacts-list {
+  width: 100%;
+}
+
+.contacts-list caption {
+  padding: 0;
+  padding-bottom: 5px;
+
+  font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+  color: #000;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+
+  caption-side: top;
+}
+
+.contacts-list tr {
+  border-bottom: 1px solid #747474;
+}
+
+.contacts-list tr:last-child {
+  border-bottom: none;
+}
+
+.contacts-list td {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 50%;
+
+  font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+}
+
+.contacts-list td:first-child {
+  vertical-align: top;
+}
+
+.contacts-list td:last-child {
+  color: #105599;
+
+  vertical-align: bottom;
+}
+
+.contacts-list a {
+  color: #105599;
+}
+
+.contacts-location-map {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.location-image-wrap {
+  display: flex;
+  justify-content: center;
+
+  overflow: hidden;
 }

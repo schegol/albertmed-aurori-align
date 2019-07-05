@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <title>Сайт клиники «АльбертМед»</title>
   </head>
   <body class="index">
@@ -61,7 +62,58 @@
       </div>
     </header>
     <main class="main-inner">
-
+      <div class="container">
+        <div class="inner-heading">
+          <h1>Контакты</h1>
+        </div>
+        <section class="contacts">
+          <h2 class="visually-hidden">Все контактные данные клиники «АльбертМед»</h2>
+          <div class="row contacts-text">
+            <div class="col-12 col-lg-6">
+              <p class="contacts-description">
+                До клиники «АльбертМед» легко добраться из любой части города. Наша клиника расположена в самом его центре.<br>
+                Ее легко найти по двум заметным ориентирам. Здание, где мы работаем, находится между шиномонтажом и домом деда Макара.<br>
+                Из с. Борончук до нас можно доехать на маршрутном такси №5, остановка «улица Гидрологическая».
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="contacts-list-wrap">
+                <table class="contacts-list">
+                  <caption>Клиника «АльбертМед»</caption>
+                  <tr>
+                    <td>Адрес:</td>
+                    <td>г. Верхоянск, ул. Кирова, д. 28</td>
+                  </tr>
+                  <tr>
+                    <td>Режим работы:</td>
+                    <td>Ежедневно с 10:00 до 21:00</td>
+                  </tr>
+                  <tr>
+                    <td>Телефон:</td>
+                    <td><a href="tel:+74116533333">8 (41165) 333-33</a></td>
+                  </tr>
+                  <tr>
+                    <td>Электронная почта:</td>
+                    <td><a href="mailto:albertmed@hotmail.ru">albertmed@<wbr>hotmail.ru</a></td>
+                  </tr>
+                  <tr>
+                    <td>Группа ВК:</td>
+                    <td><a href="https://vk.com/albert_med/" target="_blank">vk.com/albert_med</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contacts-location-map col-12">
+              <div class="yandex-map" id="yandex-map-script"></div>
+              <div class="location-image-wrap">
+                <img width="1140" height="500" src="img/map-big.png" alt="г. Верхоянск, ул. Кирова, д. 28">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -175,7 +227,6 @@
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
