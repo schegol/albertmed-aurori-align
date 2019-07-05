@@ -193,12 +193,17 @@ main {
 
 .dropdown-menu {
   padding: 0;
+  margin-top: 0;
 
   border: 1px solid #747474;
   border-radius: .4rem;
 
   overflow: hidden;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
 
 .dropdown-menu a {
   font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
