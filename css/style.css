@@ -888,6 +888,10 @@ main {
   background-position: 23px 24px;
 }
 
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, .4);
+}
+
 .popup {
   box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
 }
