@@ -901,7 +901,7 @@ main {
   width: 600px;
   top: 50%;
 
-    font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+  font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
 
   border: 2px solid #747474;
   border-radius: 8px;
@@ -1001,7 +1001,7 @@ main {
 #doctor:focus option:first-of-type,
 #department-inner:focus option:first-of-type,
 #doctor-inner:focus option:first-of-type {
-    display: none;
+  display: none;
 }
 
 .popup-appointment .btn,
