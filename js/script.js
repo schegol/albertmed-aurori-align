@@ -1,5 +1,3 @@
-
-
 (function ($) {
 	$.fn.countTo = function (options) {
 		options = options || {};
@@ -110,7 +108,6 @@ function isScrolledIntoView(el) {
 
 $(window).on('scroll', function() {
 
-
   if (isScrolledIntoView(document.getElementById('counters'))) {
     $('.counter-number').countTo();
 
@@ -132,7 +129,7 @@ function myFunction() {
 }
 
 //map://
-var mapInteractive = document.querySelector(".yandex-map");
+var mapInteractive = document.querySelector('.yandex-map');
 if (mapInteractive) {
   ymaps.ready(function () {
       var myMap = new ymaps.Map('yandex-map-script', {
@@ -162,9 +159,9 @@ if (mapInteractive) {
   });
 }
 
-//chaied selects://
+//chained selects://
 ;(function($, window, document, undefined) {
-    "use strict";
+    'use strict';
 
     $.fn.chained = function(parentSelector) {
         return this.each(function() {
@@ -175,14 +172,14 @@ if (mapInteractive) {
 
             /* Handles maximum two parents now. */
             $(parentSelector).each(function() {
-                $(this).bind("change", function() {
+                $(this).bind('change', function() {
                     updateChildren();
                 });
 
                 /* Force IE to see something selected on first page load, */
                 /* unless something is already selected */
-                if (!$("option:selected", this).length) {
-                    $("option", this).first().attr("selected", "selected");
+                if (!$('option:selected', this).length) {
+                    $('option', this).first().attr('selected', 'selected');
                 }
 
                 /* Force updating the children. */
@@ -191,17 +188,17 @@ if (mapInteractive) {
 
             function updateChildren() {
                 var triggerChange = true;
-                var currentlySelectedValue = $("option:selected", child).val();
+                var currentlySelectedValue = $('option:selected', child).val();
 
                 $(child).html(backup.html());
 
                 /* If multiple parents build value like foo+bar. */
-                var selected = "";
+                var selected = '';
                 $(parentSelector).each(function() {
-                    var selectedValue = $("option:selected", this).val();
+                    var selectedValue = $('option:selected', this).val();
                     if (selectedValue) {
                         if (selected.length > 0) {
-                            selected += "+";
+                            selected += '+';
                         }
                         selected += selectedValue;
                     }
@@ -216,21 +213,21 @@ if (mapInteractive) {
                 } else {
                     first = $(parentSelector).first();
                 }
-                var selectedFirst = $("option:selected", first).val();
+                var selectedFirst = $('option:selected', first).val();
 
-                $("option", child).each(function() {
+                $('option', child).each(function() {
                     /* Always leave the default value in place. */
-                    if ($(this).val() === "") {
+                    if ($(this).val() === '') {
                         return;
                     }
                     var matches = [];
-                    var data = $(this).data("chained");
+                    var data = $(this).data('chained');
                     if (data) {
-                        matches = data.split(" ");
+                        matches = data.split(' ');
                     }
                     if ((matches.indexOf(selected) > -1) || (matches.indexOf(selectedFirst) > -1)) {
                         if ($(this).val() === currentlySelectedValue) {
-                            $(this).prop("selected", true);
+                            $(this).prop('selected', true);
                             triggerChange = false;
                         }
                     } else {
@@ -239,19 +236,19 @@ if (mapInteractive) {
                 });
 
                 /* If we have only the default value disable select. */
-                if (1 === $("option", child).length && $(child).val() === "") {
-                    $(child).prop("disabled", true);
+                if (1 === $('option', child).length && $(child).val() === '') {
+                    $(child).prop('disabled', true);
                 } else {
-                    $(child).prop("disabled", false);
+                    $(child).prop('disabled', false);
                 }
                 if (triggerChange) {
-                    $(child).trigger("change");
+                    $(child).trigger('change');
                 }
             }
         });
     };
 
-    $("#doctor").chained("#department");
-		$("#doctor-inner").chained("#department-inner");
+    $('#doctor').chained('#department');
+		$('#doctor-inner').chained('#department-inner');
 
 })(window.jQuery || window.Zepto, window, document);
