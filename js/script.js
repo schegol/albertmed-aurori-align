@@ -98,23 +98,26 @@ jQuery(function ($) {
 
 //
 
-function isScrolledIntoView(el) {
-  var elemTop = el.getBoundingClientRect().top;
-  var elemBottom = el.getBoundingClientRect().bottom;
+var counters = document.getElementById('counters');
+if (counters) {
+	function isScrolledIntoView(counters) {
+	  var countersTop = counters.getBoundingClientRect().top;
+	  var countersBottom = counters.getBoundingClientRect().bottom;
 
-  var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-  return isVisible;
+	  var isVisible = (countersTop >= 0) && (countersBottom <= window.innerHeight);
+	  return isVisible;
+	}
+
+	$(window).on('scroll', function() {
+
+	  if (isScrolledIntoView(counters)) {
+	    $('.counter-number').countTo();
+
+	    // Unbind scroll event
+	    $(window).off('scroll');
+	  }
+	});
 }
-
-$(window).on('scroll', function() {
-
-  if (isScrolledIntoView(document.getElementById('counters'))) {
-    $('.counter-number').countTo();
-
-    // Unbind scroll event
-    $(window).off('scroll');
-  }
-});
 
 //
 
