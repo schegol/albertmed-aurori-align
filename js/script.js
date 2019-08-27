@@ -1,3 +1,5 @@
+//counters://
+
 (function ($) {
 	$.fn.countTo = function (options) {
 		options = options || {};
@@ -90,26 +92,26 @@ jQuery(function ($) {
   $('.timer').each(count);
 
   function count(options) {
-	var $this = $(this);
-	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-	$this.countTo(options);
+		var $this = $(this);
+		options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+		$this.countTo(options);
   }
 });
 
-//
+//counters lazyload://
 
 var counters = document.getElementById('counters');
+
 if (counters) {
 	function isScrolledIntoView(counters) {
 	  var countersTop = counters.getBoundingClientRect().top;
 	  var countersBottom = counters.getBoundingClientRect().bottom;
-
 	  var isVisible = (countersTop >= 0) && (countersBottom <= window.innerHeight);
+
 	  return isVisible;
-	}
+	};
 
 	$(window).on('scroll', function() {
-
 	  if (isScrolledIntoView(counters)) {
 	    $('.counter-number').countTo();
 
@@ -117,19 +119,7 @@ if (counters) {
 	    $(window).off('scroll');
 	  }
 	});
-}
-
-//
-
-var functionIsRunning = false;
-
-function myFunction() {
-    if (!functionIsRunning) {
-        functionIsRunning = true;
-        //do stuff
-        functionIsRunning = false;
-    }
-}
+};
 
 //map://
 var mapInteractive = document.querySelector('.yandex-map');
@@ -160,7 +150,7 @@ if (mapInteractive) {
       myMap.geoObjects
           .add(myPlacemarkWithContent);
   });
-}
+};
 
 //chained selects://
 ;(function($, window, document, undefined) {
@@ -255,3 +245,15 @@ if (mapInteractive) {
 		$('#doctor-inner').chained('#department-inner');
 
 })(window.jQuery || window.Zepto, window, document);
+
+//input masks://
+
+jQuery(function($){
+	$(".form-phone").mask('+7 (999) 999-99-99');
+  $(".form-date").mask('99.99.9999');
+	$.mask.definitions['H'] = "[1-2]";
+	$.mask.definitions['h'] = "[0-9]";
+	$.mask.definitions['M'] = "[0-5]";
+	$.mask.definitions['m'] = "[0-9]";
+	$(".form-time").mask('Hh:Mm');
+});
