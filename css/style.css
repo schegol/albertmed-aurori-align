@@ -400,13 +400,14 @@ main {
 .counter-box::before {
   position: absolute;
 
+  display: block;
   content: "";
   width: 30px;
   height: 30px;
   top: 1rem;
-  left: 50%;
+  left: auto;
 
-  transform: translateX(-50%);
+  transform: translateX(250%);
 }
 
 .counter-box-doctors::before {
@@ -725,7 +726,29 @@ main {
 }
 
 .popup {
+  position: relative;
+
   box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
+
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.popup * {
+  z-index: 1200;
+}
+
+.popup::before {
+  position: absolute;
+  content: "";
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #fff;
+
+  z-index: 1;
 }
 
 .popup-appointment {
@@ -742,6 +765,8 @@ main {
 
 .popup .form-control,
 .inner-appointment .form-control {
+  position: relative;
+
   padding: 5px 0 5px 5px;
 
   font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
@@ -749,6 +774,8 @@ main {
 
   border-radius: .2rem;
   border: 1px solid rgba(0, 0, 0, 0.6);
+
+  z-index: 3000;
 }
 
 .form-control:focus {
@@ -1394,6 +1421,7 @@ main {
 .certificate-image {
   width: 100%;
   height: auto;
+  flex-basis: 100%;
 }
 
 .about-description-bold {
@@ -1431,7 +1459,8 @@ main {
 .alert-success-text {
   margin: 0;
 
-  font-size: 20px;
+  font-family: "IBM Plex Sans", "Arial", sans-serif;
+  font-size: 18px;
   line-height: 26px;
 }
 
@@ -1447,7 +1476,7 @@ main {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
   .introductions {
     min-height: 500px;
     background-image: url("../img/introductions-bg-medium.png");
@@ -1464,7 +1493,7 @@ main {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199.98px) {
   .counters h2,
   .features h2,
   .departments h2 {
@@ -1473,13 +1502,13 @@ main {
   }
 }
 
-@media (min-width: 768px) and (max-width: 993px) {
+@media (min-width: 768px) and (max-width: 992.98px) {
   .features .container {
     padding-bottom: 0;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 990.98px) {
   .navbar-light .navbar-nav .nav-link {
     padding-left: 0;
     transition: padding-left .5s ease;
@@ -1527,7 +1556,7 @@ main {
   }
 }
 
-@media (max-width: 931px) {
+@media (max-width: 930.98px) {
   .modal-content {
     width: 100%;
     margin: 0;
@@ -1539,12 +1568,12 @@ main {
   }
 
   .alert-success-text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .header-contacts .container,
   .clinic-contacts-wrap {
     justify-content: center;
@@ -1606,9 +1635,13 @@ main {
   .about-certificates {
     flex-direction: row;
   }
+
+  .certificate-image {
+    max-width: 50%;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
   .counter-row {
     display: none;
   }
@@ -1623,12 +1656,12 @@ main {
   }
 
   .alert-success-text {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
   }
 }
 
-@media (max-width: 562px) {
+@media (max-width: 561.98px) {
   .doctor-wrap {
     flex-direction: column;
     align-items: center;
@@ -1647,7 +1680,7 @@ main {
   }
 }
 
-@media (max-width: 558px) {
+@media (max-width: 557.98px) {
   .header-address {
     margin-right: 0;
   }
@@ -1663,7 +1696,7 @@ main {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 389.98px) {
   .appointment-form fieldset {
     justify-content: center;
   }
